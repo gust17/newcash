@@ -62,6 +62,14 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
+        'mysql2' => [
+            'driver'    => 'mysql',
+            'host'      => 'nftcashdb.cicanacifcq8.us-east-1.rds.amazonaws.com',
+            'port'      => '3306',
+            'database'  => 'nftcash',
+            'username'  => 'root',
+            'password'  => '9OvvXIRrY4en',
+        ],
 
         'pgsql' => [
             'driver' => 'pgsql',
@@ -125,7 +133,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_') . '_database_'),
         ],
 
         'default' => [

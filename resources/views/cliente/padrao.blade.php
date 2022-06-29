@@ -185,8 +185,8 @@
                             </span>
                         </a>
                         <ul class="pc-submenu">
-                            <li class="pc-item"><a class="pc-link" href="">'menu_perfil_dados</a></li>
-                            <li class="pc-item"><a class="pc-link" href="">'menu_perfil_senha</a></li>
+                            <li class="pc-item"><a class="pc-link" href="{{url('conta/dados')}}">DADOS PESSOAIS</a></li>
+                            <li class="pc-item"><a class="pc-link" href="{{url('conta/senha')}}">MINHA SENHA</a></li>
                         </ul>
                     </li>
                     <li class="pc-item pc-hasmenu">
@@ -293,6 +293,8 @@
             </div>
         </div>
         <!-- [ breadcrumb ] end -->
+
+        @yield('content')
 
     </div>
     <!-- [ Main Content ] end -->
